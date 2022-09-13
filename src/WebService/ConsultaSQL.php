@@ -66,7 +66,7 @@ class ConsultaSQL
                 $array[] = "{$key}={$value}";
             endforeach;
         endif;
-
+        dd($array);
         $this->parameters = implode(';', $array);
     }
 
