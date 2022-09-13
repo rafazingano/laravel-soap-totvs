@@ -14,7 +14,7 @@ class ConsultaSQL
     private string $sentence;
     private int $affiliate;
     private string $system;
-    private array $parameters;
+    private string $parameters;
     private $connection;
 
     public function __construct(WebService $ws)
@@ -66,7 +66,7 @@ class ConsultaSQL
                 $array[] = "{$key}={$value}";
             endforeach;
         endif;
-        dd($array);
+
         $this->parameters = implode(';', $array);
     }
 
