@@ -1,6 +1,6 @@
 <?php
 return [
-    'user' => env('WSHOST'),
-    'pass' => env('WSUSER'),
-    'host' => env('WSPASS'),
+    'user' => env('WSUSER'),
+    'pass' => env('WSPASS'),
+    'host' => env('WSHOST'),
 ];
