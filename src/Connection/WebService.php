@@ -15,9 +15,9 @@ class WebService
     {
         try {
 
-            $connection = new Client(getenv('soap-totvs.host') . $path, [
-                'login'                 =>          confiv('soap-totvs.user'),
-                'password'              =>          getenv('soap-totvs.pass'),
+            $connection = new Client(config('soap-totvs.host') . $path, [
+                'login'                 =>          config('soap-totvs.user'),
+                'password'              =>          config('soap-totvs.pass'),
                 'soap_version'          =>          SOAP_1_1,
                 'cache_wsdl'            =>          WSDL_CACHE_NONE,
                 'keep_alive'            =>          false,
