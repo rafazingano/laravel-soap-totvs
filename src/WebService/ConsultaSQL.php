@@ -67,7 +67,7 @@ class ConsultaSQL
             endforeach;
         endif;
 
-        $this->parameters = join(';', $array);
+        $this->parameters = implode(';', $array);
     }
 
     /**
